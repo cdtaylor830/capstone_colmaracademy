@@ -1,0 +1,37 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+  font-family: verdana, sans-serif;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
+/* Header */
+header {
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+}
+
+.logo {
+  flex-grow: 1;
+  padding-left: 24px;
+}
+
+.headernav span {
+  padding: 8px;
+}
+
+.headernav a {
+  text-decoration: none;
+}
+ .logo .colmar {
+   font-weight: bold;
+ }
+.logo .academy {
+  color: #85929E;
+}
