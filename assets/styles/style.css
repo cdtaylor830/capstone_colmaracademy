@@ -160,6 +160,7 @@ header {
 #courses .course-block {
   width: 25%;
   margin: 1.5rem 0;
+  background-color: white;
 }
 
 #courses .course-image {
@@ -168,18 +169,23 @@ header {
   width: auto;
 }
 
+#courses .course-image img {
+  width: 100%;
+  height: auto;
+}
+
 #courses .course-description {
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   background-color: white;
 }
 
 #courses .course-description h4 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 #courses .course-description p {
-  margin-bottom: 0.5rem;
-
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
 }
