@@ -1,6 +1,6 @@
 /* Universal Styles */
 html {
-  font-size: 16px;
+  font-size: 14px;
   font-family: verdana, sans-serif;
 }
 
@@ -60,7 +60,7 @@ header {
   margin: 20px 0px;
 }
 
-#banner .narrative h3 {
+#banner .narrative h2 {
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
@@ -70,4 +70,65 @@ header {
 #banner .btn {
   background-color: #85929E;
   padding: 8px 60px;
+}
+
+/* First Information Section*/
+#information .info-main {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+#information .info-main img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+#information .info-main h1 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#information .info-main blockquote {
+  padding-bottom: 32px;
+}
+#information .info-list {
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid #D7DBDD;
+}
+
+#information .info-image {
+  max-width: 35%;
+  margin: 16px;
+}
+
+#information .info-image img {
+  width: 100%;
+  height: auto;
+}
+
+#information .info-text {
+  max-width: 50%;
+}
+
+#information .info-text h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#information .info-text p {
+  margin-bottom: 8px;
+}
+#information .info-text a {
+  text-decoration: none;
+}
+
+#information .orientation {
+  border-bottom: 1px solid #D7D8DD;
+}
+
+#information .lecture {
+  background-color: #D7D8DD;
 }
