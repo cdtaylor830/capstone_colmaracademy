@@ -1,7 +1,8 @@
 /* Universal Styles */
 html {
-  font-size: 14px;
+  font-size: 16px;
   font-family: verdana, sans-serif;
+  line-height: 1.5;
 }
 
 .flexbox {
@@ -11,7 +12,7 @@ html {
 
 /* Header */
 header {
-  height: 64px;
+  height: 4rem;
   width: 100%;
   position: fixed;
   z-index: 20;
@@ -20,11 +21,11 @@ header {
 
 .logo {
   flex-grow: 1;
-  padding-left: 24px;
+  padding-left: 1.5rem;
 }
 
 .headernav span {
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 .headernav a {
@@ -39,14 +40,14 @@ header {
 
 /* Banner */
 #banner {
-  padding-top: 65px;
+  padding-top: 4rem;
   background-color: #D7DBDD;
 }
 
 #banner img {
   width: 60%;
   height: auto;
-  margin: 32px 40px 32px 24px;
+  margin: 2rem 2.5rem 2rem 1.5rem;
 }
 
 #banner .flexbox {
@@ -57,51 +58,54 @@ header {
   display: block;
   font-size: 2.5rem;
   font-weight: bold;
-  margin: 20px 0px;
+  margin: 1.25rem 0;
 }
 
 #banner .narrative h2 {
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 40px 0px;
+  margin: 2.5rem 0;
 }
 
 #banner .btn {
   background-color: #85929E;
-  padding: 8px 60px;
+  padding: 0.5rem 3.75rem;
 }
 
 /* First Information Section*/
+#information {
+  padding-bottom: 2rem;
+}
 #information .info-main {
   width: 60%;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 
 #information .info-main img {
-  width: 90%;
+  width: 100%;
   height: auto;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 #information .info-main h1 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: bold;
 }
 
 #information .info-main blockquote {
-  padding-bottom: 32px;
+  padding-bottom: 2rem;
 }
 #information .info-list {
   flex-direction: column;
   width: 40%;
-  border: 1px solid #D7DBDD;
+  border-left: 1px solid #D7DBDD;
 }
 
 #information .info-image {
   max-width: 35%;
-  margin: 16px;
+  margin: 1rem;
 }
 
 #information .info-image img {
@@ -116,10 +120,10 @@ header {
 #information .info-text h3 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 #information .info-text p {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 #information .info-text a {
   text-decoration: none;
@@ -131,4 +135,51 @@ header {
 
 #information .lecture {
   background-color: #D7D8DD;
+}
+
+/* Course Descriptions */
+#courses {
+  background-color: #D7D8DD;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#courses .title h2 {
+  width: 100%;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#courses .row {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+#courses .course-block {
+  width: 25%;
+  margin: 1.5rem 0;
+}
+
+#courses .course-image {
+  overflow: hidden;
+  height: 13.75rem;
+  width: auto;
+}
+
+#courses .course-description {
+  padding: 1rem;
+  background-color: white;
+}
+
+#courses .course-description h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+#courses .course-description p {
+  margin-bottom: 0.5rem;
+
 }
