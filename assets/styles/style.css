@@ -1,6 +1,5 @@
 /* Universal Styles */
 html {
-  font-size: 16px;
   font-family: verdana, sans-serif;
   line-height: 1.5;
 }
@@ -12,7 +11,7 @@ html {
 
 /* Header */
 header {
-  height: 4rem;
+  height: 64px;
   width: 100%;
   position: fixed;
   z-index: 20;
@@ -21,11 +20,11 @@ header {
 
 .logo {
   flex-grow: 1;
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 
 .headernav span {
-  padding: 0.5rem;
+  padding: 8px;
 }
 
 .headernav a {
@@ -40,14 +39,14 @@ header {
 
 /* Banner */
 #banner {
-  padding-top: 4rem;
+  padding-top: 64px;
   background-color: #D7DBDD;
 }
 
 #banner img {
   width: 60%;
   height: auto;
-  margin: 2rem 2.5rem 2rem 1.5rem;
+  margin: 32px 40px 32px 24px;
 }
 
 #banner .flexbox {
@@ -56,46 +55,46 @@ header {
 
 #banner .narrative h1 {
   display: block;
-  font-size: 2.5rem;
+  font-size: 32px;
   font-weight: bold;
-  margin: 1.25rem 0;
+  margin: 16px 0;
 }
 
 #banner .narrative h2 {
   display: block;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
-  margin: 2.5rem 0;
+  margin: 40px 0;
 }
 
 #banner .btn {
   background-color: #85929E;
-  padding: 0.5rem 3.75rem;
+  padding: 8px 32px;
 }
 
 /* First Information Section*/
 #information {
-  padding-bottom: 2rem;
+  padding-bottom: 32px;
 }
 #information .info-main {
   width: 60%;
-  padding: 2rem 1.5rem;
+  padding: 32px 24px;
 }
 
 #information .info-main img {
   width: 100%;
   height: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 #information .info-main h1 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
+  margin-bottom: 24px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 #information .info-main blockquote {
-  padding-bottom: 2rem;
+  padding-bottom: 32px;
 }
 #information .info-list {
   flex-direction: column;
@@ -105,7 +104,7 @@ header {
 
 #information .info-image {
   max-width: 35%;
-  margin: 1rem;
+  margin: 16px;
 }
 
 #information .info-image img {
@@ -118,12 +117,12 @@ header {
 }
 
 #information .info-text h3 {
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 #information .info-text p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 #information .info-text a {
   text-decoration: none;
@@ -147,45 +146,105 @@ header {
 
 #courses .title h2 {
   width: 100%;
-  padding: 2rem 0;
-  font-size: 2rem;
+  padding: 16px 0;
+  font-size: 24px;
   font-weight: bold;
 }
 
 #courses .row {
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
 }
 #courses .course-block {
   width: 25%;
-  margin: 1.5rem 0;
+  margin: 16px 32px;
   background-color: white;
 }
 
 #courses .course-image {
   overflow: hidden;
-  height: 13.75rem;
-  width: auto;
+  height: 220px;
 }
 
 #courses .course-image img {
-  width: 100%;
-  height: auto;
+  height: 182px;
+  width: auto;
 }
 
 #courses .course-description {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 16px 24px 16px;
   background-color: white;
 }
 
 #courses .course-description h4 {
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 8px;
 }
 
 #courses .course-description p {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 18px;
+
+}
+#courses .course-description .title {
+  padding: 8px 0px;
+}
+ #courses .course-description span {
+   padding: 8px 0;
+ }
+/* Thesis exhibit */
+#thesis {
+  padding-bottom: 16px;
+}
+
+#thesis h1 {
+  font-size: 32px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+#thesis .thesis-main {
+  width: 60%;
+  padding: 16px 24px;
+}
+
+#thesis .thesis-main video {
+  margin-bottom: 32px;
+}
+
+#thesis .thesis-main h2 {
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#thesis .thesis-main blockquote {
+  padding-bottom: 32px;
+}
+#thesis .thesis-list {
+  flex-direction: column;
+  width: 423px;
+}
+
+#thesis .thesis-image {
+  max-width: 35%;
+  margin: 16px;
+}
+
+#thesis .thesis-image img {
+  width: 100%;
+  height: auto;
+}
+
+#thesis .thesis-text {
+  max-width: 50%;
+}
+
+#thesis .thesis-text h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#thesis .thesis-text p {
+  margin-bottom: 8px;
 }
