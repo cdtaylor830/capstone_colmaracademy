@@ -165,12 +165,12 @@ header {
 
 #courses .course-image {
   overflow: hidden;
-  height: 220px;
+  max-height: 220px;
 }
 
 #courses .course-image img {
-  height: 182px;
-  width: auto;
+  max-height: 182px;
+  width: 100%;
 }
 
 #courses .course-description {
@@ -181,7 +181,7 @@ header {
 #courses .course-description h4 {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin: 16px 0 8px 0;
 }
 
 #courses .course-description p {
@@ -248,7 +248,7 @@ header {
 
 }
 
-#thesis .thesos-text {
+#thesis .thesis-text {
   max-width: 50%;
 }
 
@@ -263,4 +263,25 @@ header {
 
 #thesis .fisma {
   background-color: #D7D8DD;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  border-top: 1px solid black;
+  height: 64px;
+  font-size: 12px;
+}
+
+.legal {
+  flex-grow: 1;
+  padding-left: 24px;
+}
+
+.footnav span {
+  padding: 8px;
+}
+
+.footnav a {
+  text-decoration: none;
 }
