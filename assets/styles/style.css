@@ -142,11 +142,12 @@ header {
   width: 100%;
   flex-direction: column;
   align-items: center;
+  padding: 32px 0px;
 }
 
-#courses .title h2 {
+#courses .start h2 {
   width: 100%;
-  padding: 16px 0;
+  padding: 0 0 32px 0;
   font-size: 24px;
   font-weight: bold;
 }
@@ -158,7 +159,7 @@ header {
 }
 #courses .course-block {
   width: 25%;
-  margin: 16px 32px;
+  margin: 0 16px 16px 32px;
   background-color: white;
 }
 
@@ -195,21 +196,31 @@ header {
  }
 /* Thesis exhibit */
 #thesis {
-  padding-bottom: 16px;
-}
-
-#thesis h1 {
-  font-size: 32px;
-  margin: 0 auto;
   padding: 32px 0;
 }
-#thesis .thesis-main {
-  width: 60%;
-  padding: 16px 24px;
+
+#thesis .thesis-title {
+  width: 100%;
+  margin-bottom: 32px;
+  text-align: center;
+}
+#thesis h1 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-#thesis .thesis-main video {
-  margin-bottom: 32px;
+#thesis .thesis-main {
+  width: 60%;
+  padding: 0 16px 0 24px;
+}
+
+#thesis .thesis-main .video {
+  padding-bottom: 32px;
+
+}
+
+#thesis .thesis.flexbox {
+  align-items: flex-start;
 }
 
 #thesis .thesis-main h2 {
@@ -223,7 +234,7 @@ header {
 }
 #thesis .thesis-list {
   flex-direction: column;
-  width: 423px;
+  width: 40%;
 }
 
 #thesis .thesis-image {
@@ -234,9 +245,10 @@ header {
 #thesis .thesis-image img {
   width: 100%;
   height: auto;
+
 }
 
-#thesis .thesis-text {
+#thesis .thesos-text {
   max-width: 50%;
 }
 
@@ -247,4 +259,8 @@ header {
 }
 #thesis .thesis-text p {
   margin-bottom: 8px;
+}
+
+#thesis .fisma {
+  background-color: #D7D8DD;
 }
