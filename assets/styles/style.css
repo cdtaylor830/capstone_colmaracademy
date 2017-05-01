@@ -18,6 +18,10 @@ header {
   background-color: white;
 }
 
+.mobile {
+  display: none;
+}
+
 .logo {
   flex-grow: 1;
   padding-left: 24px;
@@ -37,21 +41,47 @@ header {
   color: #85929E;
 }
 
+@media only screen and (max-width: 650px) {
+  header.desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    background-color: white;
+    height: 64px;
+    width: 100%;
+  }
+
+  .mobilenav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px;
+  }
+
+  .mobilenav img {
+    height: 60px;
+    width: auto;
+  }
+}
+
 /* Banner */
 #banner {
-  padding-top: 64px;
+  padding: 64px 32px 32px 24px;
   background-color: #D7DBDD;
 }
 
 #banner img {
   width: 60%;
   height: auto;
-  margin: 32px 40px 32px 24px;
+  margin: 32px 40px 0 0;
 }
 
 #banner .flexbox {
   flex-direction: column;
 }
+
 
 #banner .narrative h1 {
   display: block;
@@ -70,6 +100,50 @@ header {
 #banner .btn {
   background-color: #85929E;
   padding: 8px 32px;
+}
+
+/* Banner Mobile */
+@media only screen and (max-width: 650px) {
+  #banner {
+    display: block;
+    padding: 0;
+  }
+
+  #banner img {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  #banner .narrative {
+    display: block;
+    padding: 32px 16px;
+  }
+
+  #banner .narrative h1 {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+
+  #banner .narrative h2 {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+
+  #banner .btn {
+    background-color: #85929E;
+    padding: 16px 32px;
+    width: 80%;
+    margin-bottom: 32px;
+    text-align: center;
+    font-color: white;
+    font-weight: bold;
+  }
 }
 
 /* First Information Section*/
@@ -114,6 +188,7 @@ header {
 
 #information .info-text {
   max-width: 50%;
+  padding: 16px 0;
 }
 
 #information .info-text h3 {
@@ -136,6 +211,48 @@ header {
   background-color: #D7D8DD;
 }
 
+/* Information Mobile */
+@media only screen and (max-width: 650px) {
+
+  #information .info-main {
+    display: none;
+  }
+
+  #information .info-list {
+    width: 100%;
+    display: block;
+    padding: 16px;
+  }
+
+  #information .info-image {
+    max-width: 100%;
+    max-height: 220px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #information .info-image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #information .info-text {
+    display: block;
+    max-width: 80%;
+    padding: 16px 0 16px 16px;
+  }
+
+  #information .block {
+    display: block;
+  }
+
+  #information .lecture {
+    background-color: white;
+    padding-bottom: 0;
+  }
+
+}
 /* Course Descriptions */
 #courses {
   background-color: #D7D8DD;
@@ -250,6 +367,7 @@ header {
 
 #thesis .thesis-text {
   max-width: 50%;
+  padding: 16px 0;
 }
 
 #thesis .thesis-text h4 {
