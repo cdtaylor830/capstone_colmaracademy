@@ -311,6 +311,40 @@ header {
  #courses .course-description span {
    padding: 8px 0;
  }
+
+#courses .course-mobile {
+  display: none;
+}
+/* Courses Mobile */
+@media only screen and (max-width: 650px) {
+  #courses {
+    background-color: white;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    border-top: 1px solid gray;
+  }
+
+  #courses .row {
+    display: none;
+  }
+
+  #courses .course-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 80%;
+  }
+
+  #courses .course-mobile .mobile-block {
+    background-color: #D7D8DD;
+    width: 100%;
+    margin: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+}
 /* Thesis exhibit */
 #thesis {
   padding: 32px 0;
@@ -383,6 +417,34 @@ header {
   background-color: #D7D8DD;
 }
 
+/* Thesis Mobile */
+@media only screen and (max-width: 650px) {
+  #thesis {
+    padding: 0;
+    border-top: 1px solid gray;
+  }
+
+  #thesis .thesis-narrative {
+    display: none;
+  }
+
+  #thesis .thesis-main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  #thesis .thesis-list {
+    display: none;
+  }
+
+  #thesis .thesis-title {
+    padding: 32px 0;
+    margin-bottom: 0;
+  }
+}
+
 /* Footer */
 footer {
   width: 100%;
@@ -402,4 +464,11 @@ footer {
 
 .footnav a {
   text-decoration: none;
+}
+
+/* Footer Mobile */
+@media only screen and (max-width: 650px) {
+  footer .footnav {
+    display: none;
+  }
 }
