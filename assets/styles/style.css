@@ -1,6 +1,6 @@
 /* Universal Styles */
 html {
-  font-family: verdana, sans-serif;
+  font-family: "Nunito", verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -9,6 +9,9 @@ html {
   align-items: center;
 }
 
+a {
+  font-family: "Play", sans-serif;
+}
 /* Header */
 header {
   height: 64px;
@@ -29,10 +32,21 @@ header {
 
 .headernav span {
   padding: 8px;
+  transition: background-color 500ms linear 0.1s;
+  border-radius: 2px;
+}
+
+.headernav span:hover {
+  background-color: #888888;
 }
 
 .headernav a {
   text-decoration: none;
+  transition: color 500ms linear;
+}
+
+.headernav a:hover {
+  color: white;
 }
  .logo .colmar {
    font-weight: bold;
@@ -88,6 +102,7 @@ header {
   font-size: 32px;
   font-weight: bold;
   margin: 16px 0;
+  font-family: "Muli", sans-serif;
 }
 
 #banner .narrative h2 {
@@ -100,6 +115,20 @@ header {
 #banner .btn {
   background-color: #85929E;
   padding: 8px 32px;
+  width: 50%;
+  text-align: center;
+  box-shadow: 5px 5px 10px #888888;
+  transition: background-color 500ms linear 0.1s;
+}
+
+#banner .btn a {
+  text-decoration: none;
+  color: white;
+}
+
+#banner .btn:hover {
+  background-color: #888888;
+
 }
 
 /* Banner Mobile */
@@ -141,7 +170,7 @@ header {
     width: 80%;
     margin-bottom: 32px;
     text-align: center;
-    font-color: white;
+    color: white;
     font-weight: bold;
   }
 }
@@ -165,6 +194,7 @@ header {
   margin-bottom: 24px;
   font-size: 32px;
   font-weight: bold;
+  font-family: "Muli", sans-serif;
 }
 
 #information .info-main blockquote {
@@ -201,6 +231,10 @@ header {
 }
 #information .info-text a {
   text-decoration: none;
+}
+
+#information .info-text a:hover {
+  text-decoration:underline;
 }
 
 #information .orientation {
@@ -265,8 +299,8 @@ header {
 #courses .start h2 {
   width: 100%;
   padding: 0 0 32px 0;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 32px;
+  font-family: "Muli", sans-serif;
 }
 
 #courses .row {
@@ -356,8 +390,8 @@ header {
   text-align: center;
 }
 #thesis h1 {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 32px;
+  font-family: "Muli", sans-serif;
 }
 
 #thesis .thesis-main {
@@ -376,8 +410,9 @@ header {
 
 #thesis .thesis-main h2 {
   margin-bottom: 24px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
+  font-family: "Muli", sans-serif;
 }
 
 #thesis .thesis-main blockquote {
