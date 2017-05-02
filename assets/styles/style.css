@@ -10,15 +10,21 @@ html {
 }
 
 a {
-  font-family: "Play", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #67BB96;
 }
+
+a:visited {
+  color: #371C50;
+}
+
 /* Header */
 header {
   height: 64px;
   width: 100%;
   position: fixed;
   z-index: 20;
-  background-color: white;
+  background-color:  #EAF6F0;
 }
 
 .mobile {
@@ -28,6 +34,7 @@ header {
 .logo {
   flex-grow: 1;
   padding-left: 24px;
+  font-size: 18px;
 }
 
 .headernav span {
@@ -37,12 +44,13 @@ header {
 }
 
 .headernav span:hover {
-  background-color: #888888;
+  background-color: #5D6D7E;
 }
 
 .headernav a {
   text-decoration: none;
   transition: color 500ms linear;
+  font-size: 14px;
 }
 
 .headernav a:hover {
@@ -52,7 +60,7 @@ header {
    font-weight: bold;
  }
 .logo .academy {
-  color: #85929E;
+  color: #67BB96;
 }
 
 @media only screen and (max-width: 650px) {
@@ -90,6 +98,7 @@ header {
   width: 60%;
   height: auto;
   margin: 32px 40px 0 0;
+  border-radius: 5px;
 }
 
 #banner .flexbox {
@@ -99,7 +108,7 @@ header {
 
 #banner .narrative h1 {
   display: block;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   margin: 16px 0;
   font-family: "Muli", sans-serif;
@@ -108,12 +117,12 @@ header {
 #banner .narrative h2 {
   display: block;
   font-size: 24px;
-  font-weight: bold;
   margin: 40px 0;
+  color: #67BB96;
 }
 
 #banner .btn {
-  background-color: #85929E;
+  background-color: #5D6D7E;
   padding: 8px 32px;
   width: 50%;
   text-align: center;
@@ -124,10 +133,11 @@ header {
 #banner .btn a {
   text-decoration: none;
   color: white;
+  display: block;
 }
 
 #banner .btn:hover {
-  background-color: #888888;
+  background-color: #67BB96;
 
 }
 
@@ -159,8 +169,7 @@ header {
 
   #banner .narrative h2 {
     display: block;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
     margin-bottom: 24px;
   }
 
@@ -172,6 +181,10 @@ header {
     text-align: center;
     color: white;
     font-weight: bold;
+  }
+
+  #banner .btn:active {
+    background-color: #67BB96;
   }
 }
 
@@ -188,6 +201,7 @@ header {
   width: 100%;
   height: auto;
   margin-bottom: 32px;
+  border-radius: 5px;
 }
 
 #information .info-main h1 {
@@ -231,6 +245,7 @@ header {
 }
 #information .info-text a {
   text-decoration: none;
+  font-size: 14px;
 }
 
 #information .info-text a:hover {
@@ -299,7 +314,7 @@ header {
 #courses .start h2 {
   width: 100%;
   padding: 0 0 32px 0;
-  font-size: 32px;
+  font-size: 40px;
   font-family: "Muli", sans-serif;
 }
 
@@ -312,6 +327,7 @@ header {
   width: 25%;
   margin: 0 16px 16px 32px;
   background-color: white;
+  box-shadow: 5px 5px 5px #888888;
 }
 
 #courses .course-image {
@@ -324,6 +340,9 @@ header {
   width: 100%;
 }
 
+#courses p.title {
+  font-variant: small-caps;
+}
 #courses .course-description {
   padding: 0 16px 24px 16px;
   background-color: white;
@@ -390,7 +409,7 @@ header {
   text-align: center;
 }
 #thesis h1 {
-  font-size: 32px;
+  font-size: 40px;
   font-family: "Muli", sans-serif;
 }
 
@@ -486,6 +505,7 @@ footer {
   border-top: 1px solid black;
   height: 64px;
   font-size: 12px;
+  background-color: #EAF6F0;
 }
 
 .legal {
@@ -499,6 +519,10 @@ footer {
 
 .footnav a {
   text-decoration: none;
+}
+
+.footnav i {
+  padding-right: 5px;
 }
 
 /* Footer Mobile */
